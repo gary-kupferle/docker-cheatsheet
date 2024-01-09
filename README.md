@@ -8,7 +8,7 @@ Get help with Docker. Can also use –help on all subcommands
 Display system-wide information
 `docker info`
 
-# Images
+## Images
 Build an Image from a Dockerfile
 `docker build -t <image_name>`
 
