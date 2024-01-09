@@ -1,4 +1,4 @@
-# General Commands
+## General Commands
 Start the docker daemon
 `docker -d`
 
@@ -24,7 +24,7 @@ Delete an Image
 Remove all unused images
 `docker image prune`
 
-# Containers
+## Containers
 Create and run a container from an image, with a custom name:
 `docker run --name <container_name> <image_name>`
 
