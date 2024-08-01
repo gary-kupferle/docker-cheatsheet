@@ -1,6 +1,38 @@
 # Docker Cheatsheet
 Frequently used commands in the world according to Kup
 
+#### Hello, Docker
+```
+# Copy (pull) a new image to Docker host
+docker pull ubuntu:latest
+
+# Check that the image is there
+docker images
+
+# Start a container (from the above image)
+# -it makes it interactive and attach your shell to the container's terminal
+# 'bash' at end tells Docker to start a bash shell
+docker run --name test -it ubuntu:latest bash
+
+# Exit the container, but do not terminate it
+Ctrl-PQ
+
+# Check that the container started above is still running after 'Ctrl-PQ'
+docker ps
+
+# Attach your shell to the above container (named 'test')
+docker attach test
+
+# Stop the container
+docker stop test
+
+# Kill the container
+docker rm test
+
+# Verify that the container is deleted (-a flag is for "all", which includes non-running containers)
+docker ps -a
+```
+
 #### General Commands
 ```
 # Start the docker daemon
