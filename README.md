@@ -68,6 +68,9 @@ $ docker image prune
 # Create and run a container from an image, with a custom name:
 $ docker run --name <container_name> <image_name>
 
+# Run a container from an image and remove the container when it stops
+$ docker run --rm <image>
+
 # Run a container with and publish a container’s port(s) to the host.
 $ docker run -p <host_port>:<container_port> <image_name>
 
