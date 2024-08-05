@@ -60,8 +60,8 @@ docker inspect <image_name>
 # (images do not have to exist locally)
 docker manifest inspect <image_name>
 
-# Build an Image from a Dockerfile 
-$ docker build -t <image_name>
+# Build an Image from a Dockerfile. Trailing '.' makes `pwd` the **build context**
+$ docker build -t <image_name> .
 
 # Build an Image from a Dockerfile without the cache
 $ docker build -t <image_name> . –no-cache
