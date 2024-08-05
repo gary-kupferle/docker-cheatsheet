@@ -99,6 +99,9 @@ docker run -d <image_name>
 # Start or stop an existing container:
 docker start|stop <container_name> (or <container-id>)
 
+# Restart a stopped container (not sure how this is different than start):
+docker restart <container_name>
+
 # Attach your shell to the above container (named 'test')
 docker attach test
 
@@ -107,6 +110,9 @@ Ctrl PQ
 
 # Remove a stopped container:
 docker rm <container_name>
+
+# Remove a container without stopping it first:
+docker rm <container_name> -f
 
 # Open a shell inside a running container:
 docker exec -it <container_name> sh
@@ -126,4 +132,7 @@ docker ps -a
 
 # View resource usage stats
 $ docker container stats
+
+# Docker debug (requires subscription $$$)
+docker debug
 ```
