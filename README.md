@@ -138,8 +138,10 @@ $ docker container stats
 
 # Docker debug (requires subscription $$$)
 docker debug
+```
 
-#### Docker compose
+#### Docker Compose
+```
 # Start containers specified in the default compose.yaml file in the current dir
 docker compose up
 
