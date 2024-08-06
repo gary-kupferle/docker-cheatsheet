@@ -153,7 +153,7 @@ docker compose up -d
 docker compose stop
 
 # Stop and remove containers (default compose.yaml)
-# This does NOT remove the containers
+# Removes containers, but not volumes
 docker compose down
 
 # Build images before starting the containers
