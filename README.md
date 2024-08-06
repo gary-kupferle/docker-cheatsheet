@@ -156,6 +156,9 @@ docker compose stop
 # Removes containers, but not volumes
 docker compose down
 
+# Stop containers and remove everything from the compose.yaml specs
+docker compose down --volumes --rmi all
+
 # Build images before starting the containers
 docker compose up --build
 
