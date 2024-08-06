@@ -138,4 +138,25 @@ $ docker container stats
 
 # Docker debug (requires subscription $$$)
 docker debug
+
+#### Docker compose
+# Start containers specified in the default compose.yaml file in the current dir
+docker compose up
+
+# Start containers (default compose.yaml) and detach
+docker compose up -d
+
+# Stop containers (default compose.yaml)
+# This does NOT remove the containers
+docker compose stop
+
+# Stop and remove containers (default compose.yaml)
+# This does NOT remove the containers
+docker compose down
+
+# Build images before starting the containers
+docker compose up --build
+
+# Start containers with a non-default yaml file
+docker compose -f example-app/my-app.yml up
 ```
