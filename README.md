@@ -159,6 +159,12 @@ docker compose down
 # Stop containers and remove everything from the compose.yaml specs
 docker compose down --volumes --rmi all
 
+# See all running containers from a Compose app
+docker compose ps
+
+# See all containers (running or not) from a Compose app
+docker compose ps -a
+
 # Build images before starting the containers
 docker compose up --build
 
