@@ -117,6 +117,9 @@ docker rm <container_name> -f
 # Open a shell inside a running container:
 docker exec -it <container_name> sh
 
+# Run top inside a container:
+docker exec -it <container_name> top
+
 # Fetch and follow the logs of a container:
 docker logs -f <container_name>
 
