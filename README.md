@@ -46,38 +46,56 @@ $ docker info
 ```
 
 #### Images
-```
+``` bash
 # Download images from remote registries (default is Docker Hub)
 docker pull
+```
 
+``` bash
 # List local images
 $ docker images
+```
 
+``` bash
 # Metadata for an image (image must exist locally)
 docker inspect <image_name>
+```
 
+``` bash
 # Inspect the manifest list of images stored in registries
 # (images do not have to exist locally)
 docker manifest inspect <image_name>
+```
 
+``` bash
 # Build an Image from a Dockerfile. Trailing '.' makes `pwd` the **build context**
 $ docker build -t <image_name> .
+```
 
+``` bash
 # Build an Image from a Dockerfile without the cache
 $ docker build -t <image_name> . –no-cache
+```
 
+``` bash
 # Delete an Image
 $ docker rmi <image_name>
+```
 
+``` bash
 # Remove all unused images
 $ docker image prune
+```
 
 # Docker CLI plugin that works with latest build engine features
 # As of Aug-2024, this is what you use with the --platform flag to
 # get images from platforms other than the local plaform
 # (AMD on an Mx MacOS)
-docker buildx ...
+``` bash
+docker buildx --platform linux/amd64 -t <tag> .
+``` 
 
+```bash
 # Docker CLI plugin to do image vulnerability scanning
 docker scout ...
 ```
