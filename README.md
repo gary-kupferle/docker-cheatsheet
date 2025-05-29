@@ -87,10 +87,8 @@ $ docker rmi <image_name>
 $ docker image prune
 ```
 
-# Docker CLI plugin that works with latest build engine features
-# As of Aug-2024, this is what you use with the --platform flag to
-# get images from platforms other than the local plaform
-# (AMD on an Mx MacOS)
+#### Docker CLI plugin that works with latest build engine features
+#### As of Aug-2024, this is use with the --platform flag to get images from platforms other than the local plaform (AMD on an Mx MacOS)
 ``` bash
 docker buildx --platform linux/amd64 -t <tag> .
 ``` 
