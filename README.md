@@ -119,8 +119,11 @@ docker start|stop <container_name> (or <container-id>)
 # Restart a stopped container (not sure how this is different than start):
 docker restart <container_name>
 
-# Attach your shell to the above container (named 'test')
+# Attach your shell to the above container (using above container named 'test' as example)
 docker attach test
+
+# Start an existing container and attach to it (using above container named 'test' as example)
+docker start test -i
 
 # Exit a container without killing the process you're attached to 
 Ctrl PQ
@@ -149,6 +152,8 @@ docker ps
 # List all docker containers (running and stopped):
 docker ps --all
 docker ps -a
+# or if you like typing
+docker container ls -a 
 
 # View resource usage stats
 $ docker container stats
